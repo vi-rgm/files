@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#ffffff",
+					"name": "Background Light"
+				},
+				{
+					"slug": "background-dark",
+					"color": "#0B0F13",
+					"name": "Background Dark"
+				},
+				{
+					"slug": "foreground",
+					"color": "#F5F6F7",
+					"name": "Foreground Light"
+				},
+				{
+					"slug": "foreground-dark",
+					"color": "#2C3039",
+					"name": "Foreground Dark"
+				},
+				{
+					"slug": "primary",
+					"color": "#26466D",
+					"name": "Primary Light"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#26466D",
+					"name": "Primary Dark"
+				},
+				{
+					"slug": "secondary",
+					"color": "#08203E",
+					"name": "Secondary Light"
+				},
+				{
+					"slug": "secondary-dark",
+					"color": "#08203E",
+					"name": "Secondary Dark"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#C6D5E7",
+					"name": "Tertiary Light"
+				},
+				{
+					"slug": "tertiary-dark",
+					"color": "#505561",
+					"name": "Tertiary Dark"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#F4F6FF",
+					"name": "Quaternary Light"
+				},
+				{
+					"slug": "quaternary-dark",
+					"color": "#2C3039",
+					"name": "Quaternary Dark"
+				},
+				{
+					"slug": "highlight",
+					"color": "#E11D48",
+					"name": "Highlight Light"
+				},
+				{
+					"slug": "highlight-dark",
+					"color": "#E11D48",
+					"name": "Highlight Dark"
+				},
+				{
+					"slug": "line",
+					"color": "#DDDDDD",
+					"name": "Line Light"
+				},
+				{
+					"slug": "line-dark",
+					"color": "#363636",
+					"name": "Line Dark"
+				},
+				{
+					"slug": "text-one",
+					"color": "#000000",
+					"name": "Text One Light"
+				},
+				{
+					"slug": "text-one-dark",
+					"color": "#ffffff",
+					"name": "Text One Dark"
+				},
+				{
+					"slug": "text-two",
+					"color": "#747474",
+					"name": "Text Secondary Light"
+				},
+				{
+					"slug": "text-two-dark",
+					"color": "#8A95A2",
+					"name": "Text Secondary Dark"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "94rem",
+			"wideSize": "60rem"
+		}
+	}
+}

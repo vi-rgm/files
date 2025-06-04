@@ -1,0 +1,117 @@
+/**
+ * Add your design tokens as Tailwind theme variables.
+ *
+ * https://tailwindcss.com/docs/theme
+ */
+
+/* Import Splide's core CSS (adjust path if needed, ~ usually resolves to node_modules for SCSS) */
+/* @import "@splidejs/splide/dist/css/splide-core.min.css"; */
+/* Or if you want the default theme with pre-styled arrows/dots: */
+@import "@splidejs/splide/dist/css/splide.min.css";
+
+/**
+ * Your theme variables are merged with Tailwind’s defaults, either extending
+ * the default theme with new variables or overriding the values of existing
+ * variables.
+ */
+
+@theme {
+	/**
+	 * These theme variables use CSS variables set by WordPress using values
+	 * from your `theme.json` file.
+	 *
+	 * If you are using the classic editor, you should use hardcoded color
+	 * values instead of the `var()` functions below.
+     */
+	--color-background: var(--wp--preset--color--background);
+	--color-foreground: var(--wp--preset--color--foreground);
+
+	--color-primary: var(--wp--preset--color--primary);
+	--color-secondary: var(--wp--preset--color--secondary);
+	--color-tertiary: var(--wp--preset--color--tertiary);
+	--color-quaternary: var(--wp--preset--color--quaternary);
+	--color-highlight: var(--wp--preset--color--highlight);
+	--color-line: var(--wp--preset--color--line);
+	--color-text-one: var(--wp--preset--color--text-one);
+	--color-text-two: var(--wp--preset--color--text-two);
+
+	/* dark */
+	--color-background-dark: var(--wp--preset--color--background-dark);
+	--color-foreground-dark: var(--wp--preset--color--foreground-dark);
+
+	--color-primary-dark: var(--wp--preset--color--primary-dark);
+	--color-secondary-dark: var(--wp--preset--color--secondary-dark);
+	--color-tertiary-dark: var(--wp--preset--color--tertiary-dark);
+	--color-quaternary-dark: var(--wp--preset--color--quaternary-dark);
+	--color-highlight-dark: var(--wp--preset--color--highlight-dark);
+	--color-line-dark: var(--wp--preset--color--line-dark);
+	--color-text-one-dark: var(--wp--preset--color--text-one-dark);
+	--color-text-two-dark: var(--wp--preset--color--text-two-dark);
+
+	--container-content: var(--wp--style--global--content-size);
+	--container-wide: var(--wp--style--global--wide-size);
+
+	/**
+	 * These are the default `font-family` theme variables included with
+     * Tailwind. You can update them below by adding custom fonts at the
+	 * beginning of each value.
+	 *
+	 * Default theme variables can be found in their entirety at the links
+	 * below, on GitHub or in Tailwind’s documentation, respectively:
+	 *
+	 * https://github.com/tailwindlabs/tailwindcss/blob/main/packages/tailwindcss/theme.css
+	 * https://tailwindcss.com/docs/theme#default-theme-variable-reference
+	 */
+	--font-roboto:
+		"Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		-apple-system, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol",
+		"Noto Color Emoji", Helvetica, Arial, sans-serif;
+	--font-sans:
+		ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	--font-mono:
+		ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+
+	/**
+	 * Add your theme below:
+	 */
+	/**
+	 * Add your theme below:
+	 */
+	--color-brand-blue: #1e40af; /* A custom brand blue */
+	--color-brand-yellow: #facc15;
+
+	/* Colors (light mode) */
+	--color-bg: #ffffff;
+	--color-text: #111111;
+	--color-muted: #666666;
+	--color-accent: #1a73e8;
+	--color-border: #e0e0e0;
+
+	/* Colors (dark mode override using media query or class toggle) */
+	--color-bg-dark: #0d1117;
+	--color-text-dark: #e6edf3;
+	--color-muted-dark: #8b949e;
+	--color-accent-dark: #58a6ff;
+	--color-border-dark: #30363d;
+
+	/* Breakpoints */
+	--breakpoint-xs: 30rem; /* 480px */
+	--breakpoint-xms: 25rem; /* 400px */
+	--breakpoint-xxs: 20rem; /* 320px */
+
+	/* Font sizes */
+	--text-xxs: 0.625rem; /* 10px */
+	--text-xxs--line-height: calc(1 / var(--text-xxs)); /* 1.6 */
+	--text-4xls: 2rem; /* 32px */
+	--text-4xls--line-height: calc(1 / var(--text-4xls)); /* 0.5 */
+	--text-3xls: 1.75rem; /* 28px */
+	--text-3xls--line-height: calc(1 / var(--text-4xls)); /* 0.571 */
+
+	/* Container sizes */
+	--container-8xl: 96rem;
+}
+
+@custom-variant dark (&:where(.dark, .dark *, [data-theme=dark], [data-theme=dark] *));
